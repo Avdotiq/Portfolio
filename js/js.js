@@ -1,7 +1,8 @@
-var cover = document.getElementById('close');
-var btn = document.getElementById('close-btn');
-var openPan = document.getElementById('open-btn');
-var panel = document.getElementsByTagName("aside");
+let cover = document.getElementById('close');
+let btn = document.getElementById('close-btn');
+let openPan = document.getElementById('open-btn');
+let panel = document.getElementsByTagName('aside');
+let body = document.getElementsByTagName('body');
 
 window.onload = function() {
     
@@ -14,12 +15,14 @@ document.addEventListener( "DOMContentLoaded", function() {
 });
 
 function openPanel() {
+    body[0].classList.add("as-panel-open");
     cover.classList.remove("black-cover-content");
     cover.classList.add("show");
     panel[0].classList.add("aside");
 }
 
 function closePanel() {
+    body[0].classList.remove("as-panel-open");
     panel[0].classList.remove("aside");
     panel[0].classList.add("aside-unshow");
     cover.classList.remove("show");

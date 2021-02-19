@@ -59,7 +59,7 @@ aside {
     justify-content: flex-end;
     right: 0;
     top: 0;
-    height: 100vh;
+    height: 100%;
 	z-index: 996;
 	animation: fadeInRight;
 	animation-duration: 800ms;
@@ -71,7 +71,7 @@ aside {
     justify-content: flex-end;
     right: 0;
     top: 0;
-    height: 100vh;
+    height: 100%;
 	z-index: 996;
 	animation: fadeOutRight;
 	animation-duration: 800ms;
@@ -91,7 +91,7 @@ aside {
 	display: block;
 	position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #67656552;
     cursor: url(../img/close.png), auto;
 	z-index: 99;
@@ -148,30 +148,20 @@ aside {
 	white-space: normal;
 }
 
-.aducacion-wrap > a:not(.link-small) {
+.univers-link {
 	font-family: Segoe UI;
 	font-size: 14px;
+	text-decoration: none;
 	color: #ff00eb;
 	white-space: nowrap;
 }
 
-.aducacion-wrap > a:hover:not(.link-small){
+.univers-link:hover {
 	color: black;
 }
 
 .text-panel-top {
 	white-space: pre;
-}
-
-.univers-link {
-	text-decoration: none;
-	color: black;
-}
-
-.aducacion-wrap {
-	display: flex;
-	align-items: baseline;
-	flex-wrap: wrap;
 }
 
 hr {

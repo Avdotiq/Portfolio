@@ -12,12 +12,19 @@
 		padding: 20px 0;
 	}
 
+	.device {
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 1200px) {
 
 	.next-project {
 		padding: 20px 20px 20px 0;
+	}
+	iframe {
+		display: inherit;
 	}
 }
 
@@ -29,6 +36,14 @@
 
 	.data {
 		margin-bottom: 20px;
+	}
+
+	iframe {
+		display: none;
+	}
+
+	.device {
+		display: inherit;
 	}
 
 }
