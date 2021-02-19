@@ -1,0 +1,193 @@
+@media screen and (max-width: 3200px) {
+	nav {
+		padding: 30px;
+	}
+
+	li {
+		padding: 0 45px 0 0;
+	}
+
+	article {
+		width: 33.3333%;
+	}
+
+	.link-log {
+		font-size: 16px;
+	}
+
+	.proj-name {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	nav {
+		padding: 20px;
+	}
+
+	li {
+		padding: 0 30px 0 0;
+	}
+
+	article {
+		width: 50%;
+	}
+
+	.proj-name {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	nav {
+		padding: 10px;
+	}
+
+	li {
+		padding: 0 15px 0 0;
+	}
+
+	article {
+		width: 100%;
+	}
+
+	.link-log {
+		font-size: 14px;
+	}
+
+	.proj-name {
+		font-size: 14px;
+	}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigate {
+	display: flex;
+	list-style: none;
+	font-family: Segoe UI;
+	font-size: 12px;
+	/*line-height: 16px;*/
+}
+
+.navigate a {
+	list-style: none;
+	text-decoration: none;
+	color: #294B8D;
+	line-height: 35px;
+}
+
+a:hover {
+	display: block;
+	cursor: pointer;
+}
+
+li:last-child {
+	padding: 0 15px;
+	border: 1px solid #294B8D;
+}
+
+.link-log {
+	font-family: Segoe UI;
+	text-decoration: none;
+	font-weight: 500;
+	color: #294B8D;
+	display: flex;
+    align-items: center;
+}
+
+.link-log:hover {
+	color: #6082c5;
+	display: flex;
+    align-items: center;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+
+#abme {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+article {
+	background-size: cover;
+	overflow: hidden;
+}
+
+.project-1 {
+	background-color: #1a323c;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+	overflow: hidden;
+}
+
+.cover img {
+	width: 100%;
+	opacity: 1;
+}
+
+article:hover .substrate {
+	opacity: 0;
+	transform: scale(1.2);
+    transition: 400ms;
+}
+
+.cover {
+	position: relative;
+}
+
+.black-cover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	background-color: #00000066;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	transform: scale(1.3);
+	transition: opacity 400ms ease-in-out,transform 400ms ease-in-out;
+}
+
+.proj-name {
+	color: white;
+	font-family: Segoe UI;
+	font-weight: 500;
+}
+
+article:hover .black-cover {
+	transform: scale(1.0);
+	transition: opacity 400ms ease-in-out,transform 400ms ease-in-out;
+}
+
+.substrate {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: cover;
+	z-index: 3;
+	opacity: 1;
+	transform: scale(1);
+    transition: 400ms;
+}
+
+.name-proj {
+	position: absolute;
+}

@@ -1,0 +1,139 @@
+
+
+/*Обязательно контенер слайдера*/
+
+
+/* Собственно сам слайдер */
+
+.wrapperSlider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slider{
+    max-width: 100%;
+    height: 800px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.item {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item1 {
+    background-image: url(../img/slide1.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .item2 {
+    background-image: url(../img/slide2.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .item3 {
+    background-image: url(../img/slide3.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Кнопки вперед и назад */
+.slider .btn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 5;
+}
+
+
+.slider .btn-right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* При наведении на кнопки добавляем фон кнопок */
+
+.slider .btn-left:hover,
+.slider .btn-right:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Кружочки */
+
+.slider-dots {
+    position: absolute;
+    bottom: 10px;
+    z-index: 99999;
+    left: 48%; 
+}
+
+.slider-dots-item {
+    height: 9px;
+    width: 9px;
+    margin: 0 1px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active-slide-dots {
+    background-color: red;
+    transition: background-color 0.6s ease;
+}
+
+
+/* Анимация слайдов */
+
+.showing {
+    opacity: 1;
+    z-index: 3;
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+.unShowing {
+    opacity: 1;
+    z-index: 2;
+    animation: fadeOutLeft;
+    animation-duration: 2s;
+}
+
+.back {
+    opacity: 1;
+    z-index: 2;
+    animation: fadeOutRight;
+    animation-duration: 2s;
+}
+
+.backShowing {
+    opacity: 1;
+    z-index: 3;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
