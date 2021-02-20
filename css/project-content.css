@@ -16,6 +16,10 @@
 		display: none;
 	}
 
+	.project-content-wrapp .in-device {
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -44,6 +48,12 @@
 
 	.device {
 		display: inherit;
+	}
+
+	.project-content-wrapp .in-device {
+		width: 320px;
+		display: block;
+		margin: 20px auto;
 	}
 
 }
@@ -77,7 +87,7 @@
 	font-size: 14px;
 }
 
-.project-content-wrapp > img {
+.project-content-wrapp > img:not(.in-device) {
 	width: 100%;
 	margin: 20px 0;
 }
